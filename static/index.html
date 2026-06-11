@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NexI ChatBot - Enterprise AI Intelligence Platform</title>
+    <!-- Premium Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      /* Fallback stylesheet for font variables */
+      :root {
+        --font-inter: 'Inter', sans-serif;
+        --font-space: 'Space Grotesk', sans-serif;
+      }
+    </style>
+    <script type="module" crossorigin src="/static/assets/index.js"></script>
+    <link rel="stylesheet" crossorigin href="/static/assets/index.css">
+  </head>
+  <body class="bg-[#030712] text-slate-100 overflow-x-hidden selection:bg-[#76b900]/30 selection:text-white">
+    <!-- Server State Injector (used by FastAPI/Jinja2 template render) -->
+    <script>
+      window.__INITIAL_STATE__ = {
+        documentName: "{{ document_name or '' }}",
+        chatHistory: JSON.parse('{{ chat_history | tojson | safe if chat_history else "[]" }}')
+      };
+    </script>
+    <div id="root"></div>
+  </body>
+</html>

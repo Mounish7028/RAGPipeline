@@ -1,0 +1,23 @@
+# ── Web Framework ─────────────────────────────────────────────────────────────
+flask==3.0.3
+flask-cors==4.0.1
+
+# ── PDF Extraction ────────────────────────────────────────────────────────────
+pymupdf==1.24.9          # fitz — fast PDF text extraction (handles NVIDIA 181p compressed PDF)
+
+# ── Embedding Model ───────────────────────────────────────────────────────────
+sentence-transformers==3.0.1   # loads BAAI/bge-large-en-v1.5 (~1.3GB, cached after first run)
+torch==2.3.1                   # CPU build; swap for torch+cu121 on GPU machines
+transformers==4.43.3
+numpy==1.26.4
+
+# ── Vector Database ───────────────────────────────────────────────────────────
+chromadb>=0.5.0             # latest stable — pre-built Windows wheels available
+
+# ── Gemini LLM (google-genai SDK v0.8+) ──────────────────────────────────────
+# USE: google-genai (NOT google-generativeai — different SDK, different API)
+# Pattern: genai.Client(api_key=KEY).models.generate_content(model=M, contents=P, config=C)
+google-genai==0.8.0
+
+# ── Utilities ─────────────────────────────────────────────────────────────────
+werkzeug==3.0.3          # secure_filename, WSGI helpers (bundled with Flask)

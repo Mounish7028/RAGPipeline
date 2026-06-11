@@ -1,0 +1,35 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+.env
+
+# Node
+node_modules/
+/frontend/node_modules/
+
+# VSCode
+.vscode/
+
+# Mac
+.DS_Store
+
+# Chroma DB
+chroma_store/
+
+# uploads
+uploads/
+
+# Build
+dist/
+build/
+
+# Logs
+*.log
+
+# Byte-compiled
+*.py[cod]
