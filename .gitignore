@@ -22,7 +22,8 @@ node_modules/
 chroma_store/
 
 # uploads
-uploads/
+uploads/*
+!uploads/.gitkeep
 
 # Build
 dist/
