@@ -4,6 +4,9 @@
 
 ---
 
+# Preview
+<img width="1282" height="671" alt="image" src="https://github.com/user-attachments/assets/6c80141f-b0ae-4bf0-bd6c-1b42d9c49ba7" />
+
 ## 📁 Project Structure
 
 ```
